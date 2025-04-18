@@ -1,13 +1,10 @@
-# The Monospace Web
+# timfirst.com
 
-Monospace fonts are dear to many of us. Some find them more readable, consistent, and beautiful, than their proportional alternatives. Maybe we’re just brainwashed from spending years in terminals? Or are we hopelessly nostalgic? I’m not sure. But I like them, and that’s why I started experimenting with all-monospace Web.
-
-https://owickstrom.github.io/the-monospace-web/
+A simple personal website based on [The Monospace Web](https://github.com/owickstrom/the-monospace-web/) by Oskar Wickström.
 
 ## Build
 
 ```
-nix develop # or `direnv allow .`
 make
 ```
 
