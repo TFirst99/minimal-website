@@ -6,18 +6,22 @@ author-url: "https://timfirst.com"
 version: v1.0.0
 date: 2025-04-17
 subject: Homepage
-toc-title: Contents
 ---
 
 
-## About
+## Timothy First's Website
 
-I am a 23 year old undergraduate student.
+<hr class="thin">
+
+My name is Tim, and this is my personal website. I am a 23 year old undergraduate student studying economics and philosophy.
+
+
 
 ## Pages
 
-[Demo Page](/demo)
+<hr class="thin">
 
-## Posts
+04-17-2025: **[Demo Page](/demo)**
 
-N/A
+<hr class="thin">
+<center>tf</center>
