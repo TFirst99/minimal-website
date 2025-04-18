@@ -3,7 +3,7 @@ title: Demo Page
 subtitle: modified by timothy first
 author: Oskar Wickström
 author-url: "https://owickstrom.github.io/the-monospace-web/"
-version: v1.1.0
+version: v1.1.1
 date: 2025-04-17
 subject: Examples
 toc-title: Contents
@@ -211,7 +211,7 @@ Let's go wild and draw a chart!
 
 Media objects are supported, like images and video:
 
-![Steamboats in the Port of Rouen (1896)](resources/pissarro-steamboat.jpg)
+![Steamboats in the Port of Rouen (1896)](resources/pissarro-steamboats.jpg)
 
 ![[The Center of the Web (1914), Wikimedia](https://en.wikisource.org/wiki/Page:The_Center_of_the_Web_(1914).webm/11)](https://upload.wikimedia.org/wikipedia/commons/e/e0/The_Center_of_the_Web_%281914%29.webm)
 
