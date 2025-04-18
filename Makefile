@@ -9,11 +9,19 @@ all: $(HTML_FILES) copy-assets
 
 $(OUTPUT_DIR)/%.html: $(CONTENT_DIR)/pages/%.md $(TEMPLATE)
 	@mkdir -p $(@D)
-	pandoc --toc -s \
-		--css /reset.css \
-		--css /index.css \
-		-i $< -o $@ \
-		--template=$(TEMPLATE)
+	@if grep -q "toc-title:" $<; then \
+		pandoc --toc -s \
+			--css /reset.css \
+			--css /index.css \
+			-i $< -o $@ \
+			--template=$(TEMPLATE); \
+	else \
+		pandoc -s \
+			--css /reset.css \
+			--css /index.css \
+			-i $< -o $@ \
+			--template=$(TEMPLATE); \
+	fi
 
 copy-assets:
 	@mkdir -p $(OUTPUT_DIR)/ $(OUTPUT_DIR)/ $(OUTPUT_DIR)/resources
