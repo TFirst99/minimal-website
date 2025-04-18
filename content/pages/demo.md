@@ -53,19 +53,16 @@ We can create trees using a regular unordered list with a `tree` class:
 <ul class="tree"><li><p style="margin: 0;"><strong>/frontend/timfirst.com</strong></p>
 
 * content
+    * pages
+        * demo.md
+        * index.md
     * resources
-        * castle.jpg
-    * demo.md
-    * index.md
+        * pissaro-steamboat.jpg
 * src
-    * css
-        * index.css
-        * reset.css
-    * js
-        * index.js
-    * templates
-        * index.html
-        * post.html
+    * index.css
+    * reset.css
+    * index.js
+    * template.html
 * .gitignore
 * LICENSE.md
 * Makefile
@@ -214,7 +211,7 @@ Let's go wild and draw a chart!
 
 Media objects are supported, like images and video:
 
-![A room in an old French castle (2024)](resources/castle.jpg)
+![Steamboats in the Port of Rouen (1896)](resources/pissaro-steamboat.jpg)
 
 ![[The Center of the Web (1914), Wikimedia](https://en.wikisource.org/wiki/Page:The_Center_of_the_Web_(1914).webm/11)](https://upload.wikimedia.org/wikipedia/commons/e/e0/The_Center_of_the_Web_%281914%29.webm)
 
