@@ -1,12 +1,27 @@
-VERSION=$(shell jq -r .version package.json)
-DATE=$(shell date +%F)
+CONTENT_DIR = content
+OUTPUT_DIR = public
+TEMPLATE = src/template.html
 
-all: index.html
+MARKDOWN_FILES = $(shell find $(CONTENT_DIR) -name "*.md")
+HTML_FILES = $(patsubst $(CONTENT_DIR)/pages/%.md,$(OUTPUT_DIR)/%.html,$(MARKDOWN_FILES))
+
+all: $(HTML_FILES) copy-assets
+
+$(OUTPUT_DIR)/%.html: $(CONTENT_DIR)/pages/%.md $(TEMPLATE)
+	@mkdir -p $(@D)
+	pandoc --toc -s \
+		--css /reset.css \
+		--css /index.css \
+		-i $< -o $@ \
+		--template=$(TEMPLATE)
+
+copy-assets:
+	@mkdir -p $(OUTPUT_DIR)/ $(OUTPUT_DIR)/ $(OUTPUT_DIR)/resources
+	cp src/*.css $(OUTPUT_DIR)/
+	cp src/*.js $(OUTPUT_DIR)/
+	cp -r $(CONTENT_DIR)/resources/* $(OUTPUT_DIR)/resources/ 2>/dev/null || true
 
 clean:
-	rm -f index.html
+	rm -rf $(OUTPUT_DIR)
 
-index.html: demo/index.md demo/template.html Makefile
-	pandoc --toc -s --css src/reset.css --css src/index.css -Vversion=v$(VERSION) -Vdate=$(DATE) -i $< -o $@ --template=demo/template.html
-
-.PHONY: all clean
+.PHONY: all clean copy-assets
