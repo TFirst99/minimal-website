@@ -3,8 +3,8 @@ title: Demo Page
 subtitle: modified by timothy first
 author: Oskar Wickström
 author-url: "https://owickstrom.github.io/the-monospace-web/"
-version: v1.1.1
-date: 2025-04-17
+version: v1.2.0
+date: 2025-04-18
 subject: Examples
 toc-title: Contents
 ---
@@ -12,13 +12,17 @@ toc-title: Contents
 
 ## Font
 
-This website uses the _dejuva sans_ font. I found it on [Fabien Sanglard's website](https://fabiensanglard.net/), and really liked it.
+<hr class="thin">
+
+This site uses the DejaVu Sans Mono font. I found it on [Fabien Sanglard's website](https://fabiensanglard.net/), and think it provides a good balance between readability and aesthetics.
 
 ## Basics
 
-This is a regular paragraph. If it is long enough, it will smoothly wrap to the next line. No special formatting is required to render a paragraph like this. Hyphens are automatically added to words that end on the line.
+<hr class="thin">
 
-In order to start a new paragraph, we just leave a blank line between paragraphs.
+To separate sections, we can use a horizontal rule. In order to start a new paragraph, we just leave a blank line between paragraphs.
+
+This is a regular paragraph. If it is long enough, it will smoothly wrap to the next line. No special formatting is required to render a paragraph like this.
 
 We can hide stuff in the `<details`> element:
 
@@ -27,11 +31,9 @@ We can hide stuff in the `<details`> element:
 <p>Content hidden inside of the dropdown.</p>
 </details>
 
-To separate sections, we can use a horizontal rule:
-
-<hr>
-
 ## Lists
+
+<hr class="thin">
 
 This is a plain old bulleted list:
 
@@ -71,9 +73,9 @@ We can create trees using a regular unordered list with a `tree` class:
 
 </li></ul>
 
-<hr>
-
 ## Tables
+
+<hr class="thin">
 
 We can use regular tables that automatically adjust to the monospace grid.
 They're responsive.
@@ -102,9 +104,9 @@ They're responsive.
 
 We choose which column grows to fill the remaining space. In this case, it is the "Dimensions" column.
 
-<hr>
-
 ## Forms
+
+<hr class="thin">
 
 Here are some buttons:
 
@@ -129,9 +131,9 @@ And radio buttons:
 <label><input name="radio" type="radio" /> Blue</label>
 </form>
 
-<hr>
-
 ## Grids
+
+<hr class="thin">
 
 Add the `grid` class to a container to divide up the horizontal space evenly for the cells.
 Note that it maintains the monospace, so the total width might not be 100%.
@@ -148,15 +150,15 @@ If we want one cell to fill the remainder, we set `flex-grow: 1;` for that parti
 
 <div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3!!!" style="flex-grow: 1;" /><input readonly value="4" /><input readonly value="5" /><input readonly value="6" /></div>
 
-<hr>
+## Drawings
 
-## ASCII Drawings
+<hr class="thin">
 
 We can draw in `<pre>` tags using [box-drawing characters](https://en.wikipedia.org/wiki/Box-drawing_characters):
 
 ```
 ╭─────────────────╮
-│ MONOSPACE ROCKS │
+│ A MONOSPACE BOX │
 ╰─────────────────╯
 ```
 
@@ -205,9 +207,9 @@ Let's go wild and draw a chart!
 <figcaption>I've never managed to break a pair of jeans.</figcaption>
 </figure>
 
-<hr>
-
 ## Media
+
+<hr class="thin">
 
 Media objects are supported, like images and video:
 
@@ -217,10 +219,13 @@ Media objects are supported, like images and video:
 
 They extend to the width of the page, and add appropriate padding in the bottom to maintain the monospace grid.
 
-<hr>
-
 ## Discussion
+
+<hr class="thin">
 
 This page was adopted from work by [Oskar Wickström](https://x.com/owickstrom). I have essentially copied [his website](https://owickstrom.github.io/the-monospace-web/) to use as the features page for this site. Many thanks to him for creating such a great resource.
 
 You can find the source code for the original here: [github.com/owickstrom/the-monospace-web](https://github.com/owickstrom/the-monospace-web)
+
+<hr class="thin">
+<center>tf</center>
