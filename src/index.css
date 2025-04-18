@@ -38,6 +38,10 @@
     margin-top: var(--line-height);
 }
 
+hr.thin + * {
+    margin-top: 0;
+}
+
 html {
     display: flex;
     width: 100%;
@@ -79,6 +83,15 @@ h6 {
     line-height: var(--line-height);
 }
 
+h1:has(+ hr.thin),
+h2:has(+ hr.thin),
+h3:has(+ hr.thin),
+h4:has(+ hr.thin),
+h5:has(+ hr.thin),
+h6:has(+ hr.thin) {
+    margin-bottom: 0;
+}
+
 h1 {
     font-size: 2rem;
     line-height: calc(2 * var(--line-height));
@@ -94,7 +107,7 @@ hr {
     position: relative;
     display: block;
     height: var(--line-height);
-    margin: calc(var(--line-height) * 1.5) 0;
+    margin: 0;
     border: none;
     color: var(--text-color);
 }
@@ -106,6 +119,26 @@ hr:after {
     left: 0;
     width: 100%;
     border-top: calc(var(--border-thickness) * 3) double var(--text-color);
+    height: 0;
+}
+
+hr.thin {
+    position: relative;
+    display: block;
+    height: var(--line-height);
+    margin: 0;
+    border: none;
+    color: var(--text-color);
+}
+
+hr.thin:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: calc(var(--line-height) / 2);
+    left: 0;
+    width: 100%;
+    border-top: var(--border-thickness) solid var(--text-color);
     height: 0;
 }
 
