@@ -66,9 +66,6 @@
                 $endif$
             </tr>
         </table>
-        <label class="debug-toggle-label"
-            ><input type="checkbox" class="debug-toggle" /> Debug mode</label
-        >
         $if(abstract)$
         <div class="abstract">
             <div class="abstract-title">$abstract-title$</div>
@@ -81,6 +78,11 @@
             </summary>
             <nav id="$idprefix$TOC" role="doc-toc">$table-of-contents$</nav>
         </details>
+        $endif$ $if(debug)$
+        <label class="debug-toggle-label">
+            <input type="checkbox" class="debug-toggle" />
+            Debug Grid
+        </label>
         $endif$ $body$ $for(include-after)$ $include-after$ $endfor$
         <div class="debug-grid"></div>
         <script src="/index.js"></script>
