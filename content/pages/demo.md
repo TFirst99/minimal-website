@@ -3,10 +3,11 @@ title: Demo Page
 subtitle: Uses Oskar Wickström's demo page as a base
 author: Timothy First
 author-url: "https://owickstrom.github.io/the-monospace-web/"
-version: v1.2.1
+version: v1.2.2
 date: 2025-04-18
 subject: Examples
 toc-title: Sections
+debug: true
 ---
 
 
