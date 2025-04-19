@@ -1,12 +1,12 @@
 ---
 title: Demo Page
-subtitle: modified by timothy first
-author: Oskar Wickström
+subtitle: Uses Oskar Wickström's demo page as a base
+author: Timothy First
 author-url: "https://owickstrom.github.io/the-monospace-web/"
-version: v1.2.0
+version: v1.2.1
 date: 2025-04-18
 subject: Examples
-toc-title: Contents
+toc-title: Sections
 ---
 
 
@@ -35,36 +35,42 @@ We can hide stuff in the `<details`> element:
 
 <hr class="thin">
 
-This is a plain old bulleted list:
+We can create a list using "*" before each item:
 
 * Quick
 * Brown
 * Fox
 * Jump
 
-Ordered lists look pretty much as you'd expect:
+Adding indentation creates a nested list:
 
-1. Milk
-1. Coffee Beans
-    1. Single-Origin
-    1. Blend
-1. Tea
+* Quick
+  * Brown
+    * Fox
+  * Jump
+
+And we can create ordered lists using numebrs:
+
+1. Quick
+1. Brown
+  1. Fox
+1. Jump
 
 We can create trees using a regular unordered list with a `tree` class:
 
-<ul class="tree"><li><p style="margin: 0;"><strong>/frontend/timfirst.com</strong></p>
+<ul class="tree"><li><p style="margin: 0;"><strong>/minimal-website</strong></p>
 
 * content
-    * pages
-        * demo.md
-        * index.md
-    * resources
-        * pissaro-steamboat.jpg
+  * pages
+    * demo.md
+    * index.md
+  * resources
+    * pissarro-steamboats.jpg
 * src
-    * index.css
-    * reset.css
-    * index.js
-    * template.html
+  * index.css
+  * reset.css
+  * index.js
+  * template.html
 * .gitignore
 * LICENSE.md
 * Makefile
@@ -162,7 +168,7 @@ We can draw in `<pre>` tags using [box-drawing characters](https://en.wikipedia.
 ╰─────────────────╯
 ```
 
-To have it stand out a bit more, we can wrap it in a `<figure>` tag, and why not also add a `<figcaption>`.
+To have it stand out a bit more, we can wrap it in a `<figure>` tag. We can also add captions with `<figcaption>`.
 
 <figure>
 <pre>
@@ -170,9 +176,9 @@ To have it stand out a bit more, we can wrap it in a `<figure>` tag, and why not
 │Team #1│                     │Team #3│
 └───┬───┘      ┌───────┐      └───┬───┘
     ├─────────►│Team #1│          │
-    │  winner  └───┬───┘          │
+    │          └───┬───┘          │
     │              │              │
-    │          ┌───┴───┐  winner  │
+    │          ┌───┴───┐          │
     │          │Team #4│◄─────────┤
 ┌───┴───┐      └───────┘      ┌───┴───┐
 │Team #2│                     │Team #4│
@@ -180,31 +186,28 @@ To have it stand out a bit more, we can wrap it in a `<figure>` tag, and why not
 <figcaption>Example: A tournament bracket.</figcaption>
 </figure>
 
-Let's go wild and draw a chart!
+We can even draw a chart using special characters:
 
 <figure><pre>
-                      Things I Have
+          Types of Books on my Bookshelf
 
-    │                                     ████ Usable
-15  │
-    │                                     ░░░░ Broken
+    │                                     ░░░░ Unread
+ 12 │                                     ████ Read
     │
-12  │   ░
-    │   ░
-    │   ░
- 9  │   ░                              ░
-    │   █                              █
-    │   █                              █
- 6  │   █                   ░          █
-    │   █                   █          █
-    │   █                   █          █
- 3  │   █                   █          █
+    │                       ░
+ 9  │             ░         ░
+    │             ░         ░
+    │             ░         ░
+ 6  │             █         ░
+    │             █         ░
+    │             █         ░
+ 3  │   █         █         ░          ░
     │   █         █         █          █
     │   █         █         █          █
  0  └───▀─────────▀─────────▀──────────▀─────────────
-      Socks     Jeans     Shoes     Shirts
+     Comics   Economics   Novels   Philosophy
 </pre>
-<figcaption>I've never managed to break a pair of jeans.</figcaption>
+<figcaption>I spend too much time reading Calvin and Hobbes.</figcaption>
 </figure>
 
 ## Media
@@ -223,7 +226,7 @@ They extend to the width of the page, and add appropriate padding in the bottom 
 
 <hr class="thin">
 
-This page was adopted from work by [Oskar Wickström](https://x.com/owickstrom). I have essentially copied [his website](https://owickstrom.github.io/the-monospace-web/) to use as the features page for this site. Many thanks to him for creating such a great resource.
+This page was adopted from work by [Oskar Wickström](https://x.com/owickstrom). I have essentially copied [his website](https://owickstrom.github.io/the-monospace-web/) to use as this demo page for my site. Many thanks to him for creating such a great resource.
 
 You can find the source code for the original here: [github.com/owickstrom/the-monospace-web](https://github.com/owickstrom/the-monospace-web)
 
