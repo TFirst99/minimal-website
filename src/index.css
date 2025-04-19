@@ -30,16 +30,43 @@
     }
 }
 
+* + * {
+    margin-top: 0; /* Remove this spacing approach */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: calc(var(--line-height) * 2);
+    line-height: var(--line-height);
+    font-weight: var(--font-weight-bold);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-weight-bold);
+    margin: calc(var(--line-height) * 2) 0 var(--line-height);
+    line-height: var(--line-height);
+}
+
+p,
+ul,
+ol,
+pre,
+figure {
+    margin-top: 0;
+    margin-bottom: var(--line-height);
+}
+
 * {
     box-sizing: border-box;
-}
-
-* + * {
-    margin-top: var(--line-height);
-}
-
-hr.thin + * {
-    margin-top: 0;
 }
 
 html {
@@ -70,17 +97,6 @@ body {
     body {
         padding: var(--line-height) 1ch;
     }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: var(--font-weight-bold);
-    margin: calc(var(--line-height) * 2) 0 var(--line-height);
-    line-height: var(--line-height);
 }
 
 h1:has(+ hr.thin),
@@ -246,12 +262,12 @@ details[open] summary {
     margin-bottom: var(--line-height);
 }
 
-details ::marker {
+details > summary::marker {
     display: inline-block;
     content: "▶";
     margin: 0;
 }
-details[open] ::marker {
+details[open] > summary::marker {
     content: "▼";
 }
 

@@ -75,11 +75,12 @@
             $abstract$
         </div>
         $endif$ $if(toc)$
-        <nav id="$idprefix$TOC" role="doc-toc">
-            $if(toc-title)$
-            <h2 id="$idprefix$toc-title">$toc-title$</h2>
-            $endif$ $table-of-contents$
-        </nav>
+        <details>
+            <summary>
+                $if(toc-title)$$toc-title$$else$Table of Contents$endif$
+            </summary>
+            <nav id="$idprefix$TOC" role="doc-toc">$table-of-contents$</nav>
+        </details>
         $endif$ $body$ $for(include-after)$ $include-after$ $endfor$
         <div class="debug-grid"></div>
         <script src="/index.js"></script>
