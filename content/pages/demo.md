@@ -3,10 +3,9 @@ title: Demo Page
 subtitle: A style guide for formatting on this site.
 author: Timothy First
 author-url: "https://owickstrom.github.io/the-monospace-web/"
-version: v1.2.3
+version: v1.2.4
 date: 2025-04-18
 subject: Examples
-toc-title: Sections
 debug: true
 ---
 
