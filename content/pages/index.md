@@ -3,8 +3,8 @@ title: TIMFIRST.COM
 subtitle: economics & philosophy undergrad
 author: Timothy First
 author-url: "https://timfirst.com"
-version: v1.0.0
-date: 2025-04-17
+version: v1.1.0
+date: 2025-04-21
 subject: Homepage
 ---
 
@@ -13,7 +13,9 @@ subject: Homepage
 
 <hr class="thin">
 
-My name is Tim, and this is my personal website. I am a 23 year old undergraduate student studying economics and philosophy.
+I am a 23 year old undergraduate student studying economics and philosophy.
+
+My interests include experimental economics, urban economics, epistemology, philosophy of science, and philosophy of language. I'm also interested in AI and how we talk about the capabilities of LLMs.
 
 
 
