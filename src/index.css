@@ -6,7 +6,7 @@
     --border-thickness: 2px;
     --text-color: #000;
     --text-color-alt: #666;
-    --background-color: #f5f5f2;
+    --background-color: #fbf6f0;
     --background-color-alt: #eee;
 
     --font-weight-normal: 500;
@@ -21,17 +21,8 @@
     font-size: 16px;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-color: #000;
-        --text-color-alt: #666;
-        --background-color: #f5f5f2;
-        --background-color-alt: #eee;
-    }
-}
-
 * + * {
-    margin-top: 0; /* Remove this spacing approach */
+    margin-top: 0;
 }
 
 h1,
