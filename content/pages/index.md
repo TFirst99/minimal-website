@@ -3,7 +3,7 @@ title: TIMFIRST.COM
 subtitle: economics & philosophy undergrad
 author: Timothy First
 author-url: "https://timfirst.com"
-version: v1.1.1
+version: v1.1.2
 date: 2025-04-21
 subject: Homepage
 ---
@@ -22,6 +22,8 @@ My interests include experimental economics, urban economics, epistemology, phil
 ## Writing
 
 <hr class="thin">
+
+??-??-2025: **Heuristics and AI** (coming soon)
 
 04-17-2025: **[Demo Page](/demo)**
 
