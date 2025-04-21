@@ -1,9 +1,9 @@
 ---
 title: Demo Page
-subtitle: Uses Oskar Wickström's demo page as a base
+subtitle: A style guide for formatting on this site.
 author: Timothy First
 author-url: "https://owickstrom.github.io/the-monospace-web/"
-version: v1.2.2
+version: v1.2.3
 date: 2025-04-18
 subject: Examples
 toc-title: Sections
@@ -50,7 +50,7 @@ Adding indentation creates a nested list:
     * Fox
   * Jump
 
-And we can create ordered lists using numebrs:
+And we can create ordered lists using numbers:
 
 1. Quick
 1. Brown
@@ -231,5 +231,5 @@ This page was adopted from work by [Oskar Wickström](https://x.com/owickstrom).
 
 You can find the source code for the original here: [github.com/owickstrom/the-monospace-web](https://github.com/owickstrom/the-monospace-web)
 
-<hr class="thin">
+<hr>
 <center>tf</center>
