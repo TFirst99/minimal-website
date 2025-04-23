@@ -3,7 +3,7 @@ title: Heuristics and AI
 subtitle: Our heuristics for human capability fail with LLMs
 author: Timothy First
 author-url: "https://timfirst.com"
-version: v0.1.1
+version: v0.2.1
 date: 2025-04-21
 subject: AI
 ---
@@ -15,17 +15,13 @@ subject: AI
 
 *Note: The general issue is that we apply heuristics to make predictions, but these heuristics are tuned to work in specific domains - in this case in the domain of human intelligence. There isn't really anything revolutionary about this point, but I think it's important to keep in mind. When we are making inferences about the abilities of AIs we should be more aware of this, and try to base our predictions on sources other than heuristics about human intelligence. Put another way, we should avoid trying to infer one capability from another based on patterns we see in people.*
 
-Imagine you run a tech startup with a small team of software engineers, and are looking to hire an intern to help speed up development for your groundbreaking smart fork that vibrates when you eat too quickly and uploads your chewing metrics to the cloud.[^3] You put out a call for applications, and quickly have dozens of responses from excited young programmers looking to get their start in tech.
+Imagine the world discovers a talking chimpanzee. Not just a chimp that can use sign language, but one that can genuinely speak English with the fluency and vocabulary of an adult human. However, as researchers begin to test the chimp's other abilities, they find something puzzling. Despite its verbal abilities, the chimp isn't special in any other way. It can't solve a puzzle, it can't do math, it can't even ride a bike. These are actually things that some chimps learn to do with training, but no matter how hard they try the scientists can't get the talking chimp to do anything special besides talk.
 
-While most of the applications look similar - computer science majors, internships at large tech companies or startups, general programming skills - one jumps out at you: they're ranked 175th in the world on a popular website that hosts competitive programming contests. They don't give you many other details about themselves, but their ranking alone suggests that they're an excellent candidate.
+The scientists are baffled. "How can this chimp speak like a human but fail at the most basic tasks?" they wonder. Papers are published on the subject, and nobody is quite sure what is going on. Until someone asks the question: why should we expect the chimp to know how to do any of those things?
 
-You send them a coding task to complete over the weekend, and they have it back to you within an hour with a perfect solution to a task that most young developers would find difficult. Excited to have such an excellent applicant, you offer them the job on the spot. They accept the job, with the one condition that they want to work remotely. This isn't an issue - your cloud integrated vibrating fork company doesn't even have an office - and you tell them that they start next week.
+We assume this because, in our every day experience, the ability to speak comes with a package of other things. In humans, speech emerges from general intelligence, socialization, and developmental experiences that typically bring along a number of abilities. When we encounter someone that can speak, we unconsciously apply our human-based heuristic -"people who can speak can also do X, Y and Z"- and are surprised when it breaks down.
 
-However, the problems begin almost immediately. Your new intern is having trouble integrating your vibrating fork app with MyFitnessPal's API. They can't seem to figure out your companies development environment, even though it's very basic. You share your screen to show them how to get the local development environment working, but they are unable to follow your actions and keep asking for the specific commands to run. When you bring up a conversation you had with them the day before about API keys, it seems like they have no recollection of the conversation.
-
-Eventually, you manage to get their local environment setup, but the problems don't end there. MyFitnessPal recently updated their authentication flow, but your intern writes their code for the old API system. Even after you point them to the new documentation, their code is a jumbled mess of the new API calls and old ones that no longer exist.
-
-Even worse, every time you message them on slack to help, it seems like they've forgotten half of the instructions you gave them an hour ago.
+Perhaps this chimp learned to speak through some narrow pathway. Maybe it's just imitating its zookeepers, maybe it has some genetic mutation impacting its vocal apparatus and the language centers of its brain. Whatever the mechanism is, the chimp's ability to speak is not correlated with a number of abilities that we associate with human speech.
 
 ## Why is This Happening
 <hr class="thin">
