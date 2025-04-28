@@ -6,7 +6,6 @@ author-url: "https://owickstrom.github.io/the-monospace-web/"
 version: v1.2.4
 date: 2025-04-18
 subject: Examples
-debug: true
 ---
 
 
