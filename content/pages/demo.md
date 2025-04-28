@@ -109,51 +109,6 @@ They're responsive.
 
 We choose which column grows to fill the remaining space. In this case, it is the "Dimensions" column.
 
-## Forms
-
-<hr class="thin">
-
-Here are some buttons:
-
-<nav>
-    <button>Click Me</button>
-    <button>Don't Click Me</button>
-</nav>
-
-And inputs:
-
-<form class="grid">
-<label>First name <input type="text" placeholder="Here..." /></label>
-<label>Favorite Fish <input type="text" placeholder="Pick a good one..." /></label>
-<label>Age <input type="text" value="23" /></label>
-</form>
-
-And radio buttons:
-
-<form class="grid">
-<label><input name="radio" type="radio" /> Red</label>
-<label><input name="radio" type="radio" /> Green</label>
-<label><input name="radio" type="radio" /> Blue</label>
-</form>
-
-## Grids
-
-<hr class="thin">
-
-Add the `grid` class to a container to divide up the horizontal space evenly for the cells.
-Note that it maintains the monospace, so the total width might not be 100%.
-Here are six grids with increasing cell count:
-
-<div class="grid"><input readonly value="1" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" /><input readonly value="5" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" /><input readonly value="5" /><input readonly value="6" /></div>
-
-If we want one cell to fill the remainder, we set `flex-grow: 1;` for that particular cell. Here we have the 3rd cell fill the remainder:
-
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3!!!" style="flex-grow: 1;" /><input readonly value="4" /><input readonly value="5" /><input readonly value="6" /></div>
 
 ## Drawings
 
@@ -216,8 +171,6 @@ We can even draw a chart using special characters:
 Media objects are supported, like images and video:
 
 ![Steamboats in the Port of Rouen (1896)](resources/pissarro-steamboats.jpg)
-
-![[The Center of the Web (1914), Wikimedia](https://en.wikisource.org/wiki/Page:The_Center_of_the_Web_(1914).webm/11)](https://upload.wikimedia.org/wikipedia/commons/e/e0/The_Center_of_the_Web_%281914%29.webm)
 
 They extend to the width of the page, and add appropriate padding in the bottom to maintain the monospace grid.
 
