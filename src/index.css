@@ -31,17 +31,6 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: calc(var(--line-height) * 2);
-    line-height: var(--line-height);
-    font-weight: var(--font-weight-bold);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
     font-weight: var(--font-weight-bold);
     margin: calc(var(--line-height) * 2) 0 var(--line-height);
     line-height: var(--line-height);
